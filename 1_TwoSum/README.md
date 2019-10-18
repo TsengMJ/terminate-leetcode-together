@@ -3,8 +3,7 @@
 ###### tags: `LeetCode` `Together`
 
 **StartDate:** *2019.10.18*
-**Members:**
-- [name=Jason Stanley MJ Hank]
+**Members:** 🐣Jason 🐣Stanley 🐣MJ 🐣Hank
 
 ---
 
