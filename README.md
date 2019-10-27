@@ -14,3 +14,7 @@ In order to get a better JOB👔!?
 	```shell
 	$ git remote update && git diff origin/master
 	```
+- [EMOJI CheatSheet](https://gist.github.com/roachhd/1f029bd4b50b8a524f3c)
+
+- [Oh Shit, Git!?!](https://ohshitgit.com/)
+> Click it When you have some Git problem
