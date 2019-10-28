@@ -15,3 +15,8 @@ In order to get a better JOB👔!?
 	```shell
 	$ git remote update && git diff origin/master
 	```
+
+- 開新分支並前往該分支
+	```shell
+	$ git checkout -b test
+	```
