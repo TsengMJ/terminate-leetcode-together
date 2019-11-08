@@ -6,25 +6,33 @@ import (
 )
 
 func main() {
-	test := "A1Z0za9"
-	for i := 0; i<len(test);i++ {
-		fmt.Println(test[i])
-		}
-	fmt.Println(isPalindrome(test))
+	test := "Azza"
+	fmt.Println(IsPalindrome(test))
 }
 
-func isPalindrome(s string) bool {
+func IsPalindrome(s string) bool {
+	sample := make(map[int]bool)
+	for i := 48; i < 58; i++ {
+		sample[i] = true
+	}
+	for i := 65; i < 91; i++ {
+		sample[i] = true
+	}
+	
 	s = strings.ToUpper(s)
-	fmt.Println(s)
 	i := 0
 	j := len(s) - 1
 	for i < j {
-		if (s[i] < 65 || s[i] > 122) {
+		number := int(s[i])
+		if _, ok := sample[number]; !ok {
 			i++
+			continue
 		}
 
-		if (s[j] < 65 || s[j] > 122) {
+		number = int(s[j])
+		if _, ok := sample[number]; !ok {
 			j--
+			continue
 		}
 
 		if s[i] != s[j] {
@@ -36,12 +44,4 @@ func isPalindrome(s string) bool {
 	}
 
 	return true
-}
-
-func Abs(num int) int {
-	if (num > 0) {
-		return num
-	}
-
-	return -num
 }
