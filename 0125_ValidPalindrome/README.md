@@ -1,4 +1,4 @@
-## 125. Valid Palinedrome
+# 125. Valid Palinedrome
 
 ###### tags: `LeetCode` `Together`
 
