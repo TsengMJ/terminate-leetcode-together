@@ -20,3 +20,16 @@ In order to get a better JOB👔!?
 	```shell
 	$ git checkout -b test
 	```
+
+- 把新修正加入之前的 commit
+	```shell
+	$ git stash
+  $ git rebase -i
+  # change the target commit to "edit"
+  $ git stash pop
+  $ git add target_file
+  $ git commit --amend --no-edit
+  $ git stash
+  $ git rebase --continue
+  $ git stash pop
+	```
