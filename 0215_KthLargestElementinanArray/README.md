@@ -1,6 +1,6 @@
 # 215. Kth Largest Element in an Array
 
-###### tags: `LeetCode` `Together` `Headp`
+###### tags: `LeetCode` `Together` `Heap` `Medium`
 
 **StartDate:** *2019.12.9*
 
