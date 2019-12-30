@@ -33,3 +33,10 @@ In order to get a better JOB👔!?
   $ git rebase --continue
   $ git stash pop
 	```
+
+## Useful Command
+- To find out which problem you haven't solved yet
+  ```sh
+  # For example: Yuan
+  $ find . -mindepth 1 -maxdepth 1 -type d '!' -exec test -d "{}/Yuan" ';' -print
+  ```
