@@ -16,23 +16,14 @@ int main() {
 
 struct TreeNode* invertTree(struct TreeNode* root) {
 
-    struct TreeNode** tmp = malloc(sizeof(struct TreeNode*));
-
     if (root) {
-        if (root->right && root->left) {
-            *tmp = root->right;
-            root->right = root->left;
-            root->left = *tmp;
-            free(tmp);
-        }
-        else if (root->left) {
-            root->right = root->left;
-            root->left = NULL;
-        }
-        else if (root->right) {
-            root->left = root->right;
-            root->right = NULL;
-        }
+        struct TreeNode** tmp = malloc(sizeof(struct TreeNode*));
+
+        *tmp = root->right;
+        root->right = root->left;
+        root->left = *tmp;
+        free(tmp);
+
         root->left = invertTree(root->left);
         root->right = invertTree(root->right);
     }
@@ -40,3 +31,12 @@ struct TreeNode* invertTree(struct TreeNode* root) {
     return root;
 }
 
+struct TreeNode* invertTree(struct TreeNode* root) {
+  if (root) {
+    struct TreeNode *tmp = root->left;
+
+    root->left = invertTree(root->right);
+    root->right = invertTree(tmp);
+  }
+  return root;
+}
