@@ -25,18 +25,18 @@ In order to get a better JOB👔!?
 	```shell
 	$ git stash
   $ git rebase -i
-  # change the target commit to "edit"
-  $ git stash pop
-  $ git add target_file
-  $ git commit --amend --no-edit
-  $ git stash
-  $ git rebase --continue
-  $ git stash pop
+  	# change the target commit to "edit"
+  	$ git stash pop
+  	$ git add target_file
+  	$ git commit --amend --no-edit
+  	$ git stash
+  	$ git rebase --continue
+  	$ git stash pop
 	```
 
 ## Useful Command
 - To find out which problem you haven't solved yet
-  ```sh
-  # For example: Yuan
-  $ find . -mindepth 1 -maxdepth 1 -type d '!' -exec test -d "{}/Yuan" ';' -print
-  ```
+  	```sh
+  	# For example: Yuan
+  	$ find . -mindepth 1 -maxdepth 1 -type d '!' -exec test -d "{}/Yuan" ';' -print
+  	```
