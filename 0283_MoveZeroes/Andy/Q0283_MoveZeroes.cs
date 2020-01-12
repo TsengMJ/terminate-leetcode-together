@@ -48,6 +48,19 @@
             }
         }
 
+        public void MoveZeroesNew02(int[] nums)
+        {
+            var notZeroCount = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    Swap(ref nums[notZeroCount], ref nums[i]);
+                    notZeroCount++;
+                }
+            }
+        }
+
         private void Swap(ref int a, ref int b)
         {
             var temp = a;
