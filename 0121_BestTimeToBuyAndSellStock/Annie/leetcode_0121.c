@@ -30,10 +30,7 @@ int maxProfit(int* prices, int pricesSize){
         if(prices[i]-prices[min_price] > maxprofit){
             maxprofit = prices[i] - prices[min_price];
         }
-        else if(prices[i]-prices[min_price] > 0){
-            maxprofit = maxprofit;
-        }
-        else{
+        else if(prices[i]-prices[min_price] <= 0){
             min_price = i;
         }
     }
